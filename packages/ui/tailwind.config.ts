@@ -3,13 +3,7 @@ import animate from 'tailwindcss-animate';
 
 const config = {
   darkMode: ['class'],
-  content: [
-    './src/**/*.{ts,tsx}',
-    // Storybookで読み込む際は./apps/storybookを起点にするため
-    '../../packages/ui/src/**/*.{ts,tsx}',
-    '../../apps/docs/src/**/*.{ts,tsx}',
-    '../../apps/web/src/**/*.{ts,tsx}',
-  ],
+  content: ['./src/**/*.{ts,tsx}'],
   prefix: '',
   theme: {
     container: {
