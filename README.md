@@ -37,3 +37,12 @@ turborepo (pnpm workspace)
 
 ```
 
+## Start
+```sh
+pnpm dev
+```
+
+
+When this command is executed, Open two Next.js applications (web, docs) that are styled with Tailwind CSS, along with the Storybook component catalog.
+
+![image](https://github.com/nyatinte/turborepo-tailwind-storybook-example/assets/104000239/cc5e6ca5-532d-4ae1-b254-9f74eaaa6ee1)
