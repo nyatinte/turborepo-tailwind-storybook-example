@@ -11,9 +11,12 @@ function getAbsolutePath(value: string): any {
 }
 const config: StorybookConfig = {
   stories: [
-    '../../web/**/*.stories.@(ts|tsx)',
-    '../../docs/**/*.stories.@(ts|tsx)',
-    '../../../packages/ui/**/*.stories.@(ts|tsx)',
+    { directory: '../../web', titlePrefix: 'Web: ' },
+    { directory: '../../docs', titlePrefix: 'Docs: ' },
+    {
+      directory: '../../../packages/ui',
+      titlePrefix: 'UI: ',
+    },
   ],
   addons: [
     getAbsolutePath('@storybook/addon-links'),
@@ -33,7 +36,7 @@ const config: StorybookConfig = {
       ...config.resolve,
       alias: {
         ...config.resolve?.alias,
-        "@repo": join(__dirname, '../../../packages'),
+        '@repo': join(__dirname, '../../../packages'),
       },
     };
     return config;
