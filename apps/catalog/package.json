@@ -23,6 +23,7 @@
     "react-dom": "^18.2.0",
     "storybook": "^7.6.17",
     "typescript": "^5.2.2",
-    "vite": "^5.1.4"
+    "vite": "^5.1.4",
+    "@repo/ui": "workspace:*"
   }
 }

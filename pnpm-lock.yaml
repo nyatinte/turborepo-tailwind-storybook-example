@@ -23,6 +23,9 @@ importers:
 
   apps/catalog:
     devDependencies:
+      '@repo/ui':
+        specifier: workspace:*
+        version: link:../../packages/ui
       '@storybook/addon-essentials':
         specifier: ^7.6.17
         version: 7.6.17(react-dom@18.2.0)(react@18.2.0)
